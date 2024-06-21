@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Guichê</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .btn-full-width {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Guichê</h1>
+        <form>
+            <div class="row">
+                
+                <div class="mb-3 col-4">
+                    <label for="nomeBalcao" class="form-label">Guiche:</label>
+                    <input type="text" class="form-control" id="nomeBalcao">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="numero" class="form-label">Número:</label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">forma de pagamento </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckGeral">
+                                </th>
+                                <td>credito</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckPrioritario">
+                                </th>
+                                <td>debito</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckNormal">
+                                </th>
+                                <td>dinheiro</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-full-width">Salvar</button>
+        </form>
+        <h2>Lista de Guichês</h2>
+        <table class="table table-success">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">caixa</th>
+                    <th scope="col">Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td> livia</td>
+                    <td>01</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">atacado</button>
+                            <button type="button" class="btn btn-warning">varejo</button>
+                            <button type="button" class="btn btn-danger">preferencial</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>virginia</td>
+                    <td>02</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">atacado</button>
+                            <button type="button" class="btn btn-warning">varejo</button>
+                            <button type="button" class="btn btn-danger">preferencial</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Brenda</td>
+                    <td>03</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">atacado</button>
+                            <button type="button" class="btn btn-warning">varejo</button>
+                            <button type="button" class="btn btn-danger">preferencial</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
